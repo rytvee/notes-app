@@ -1,0 +1,176 @@
+📝 Notes App
+
+A simple web-based Notes App for creating, viewing, updating, organizing, and deleting notes with support for categories.
+
+📁 Project Structure
+
+project-root/
+│
+├── api/                # Backend APIs
+│   ├── index.php               # Redirects to homepage
+│   ├── delete-note.php         # Deletes a note
+│   ├── fetch-categories.php    # Fetches and deletes categories
+│   ├── get-notes.php           # Fetches notes
+│   ├── save-notes.php          # Saves new notes
+│   ├── update-note.php         # Updates note content
+│   └── update-title.php        # Updates note title
+│
+├── css/
+│   └── style.css               # App styles
+│
+├── js/                 # Frontend JavaScript files
+│   ├── category.js             # Dropdown handling for categories
+│   ├── close-btn.js            # Exit buttons on add/view pages
+│   ├── fetch-category.js       # Fetch/delete categories logic
+│   ├── find-replace.js         # Find and replace in note editor
+│   ├── notes.js                # Fetch, search, update, delete notes
+│   └── save-notes.js           # Save note modal handling
+│
+├── pages/
+│   ├── add.php                 # Add new note
+│   ├── categories.php          # Manage categories
+│   ├── view.php                # View/edit note
+│   └── index.php               # Redirects to homepage
+│
+├── db.sql                      # Database schema
+└── index.php                   # Homepage
+
+🚀 Features
+
+Add Note – Create new notes with titles and categories.
+
+View/Update Note – Edit existing notes.
+
+Delete Note – Remove notes with confirmation.
+
+Search & Filter – Search by title/content and filter by category.
+
+Categories – Create and delete categories for organizing notes.
+
+Find & Replace – Text editor support for find-and-replace in notes.
+
+
+🔌 APIs Overview
+
+| File                   | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| `api/index.php`        | Redirects to homepage                                     |
+| `delete-note.php`      | Deletes a note from the homepage (`../index.php`)         |
+| `fetch-categories.php` | Fetches & deletes categories on `../pages/categories.php` |
+| `get-notes.php`        | Fetches all notes for `../index.php`                      |
+| `save-notes.php`       | Saves notes from `../add.php`                             |
+| `update-note.php`      | Updates notes from `../edit.php`                          |
+| `update-title.php`     | Updates note titles from `../index.php`                   |
+
+
+🧠 JavaScript Overview
+
+| File                | Used In                            | Description                                              |
+| ------------------- | ---------------------------------- | -------------------------------------------------------- |
+| `category.js`       | `index.php`, `add.php`, `view.php` | Handles category dropdowns                               |
+| `close-btn.js`      | `add.php`, `view.php`              | Closes the note editor without saving                    |
+| `fetch-category.js` | `categories.php`                   | Fetches and deletes categories                           |
+| `find-replace.js`   | `add.php`, `edit.php`              | Find & replace functionality for text editor             |
+| `notes.js`          | `index.php`                        | Fetch/search/filter notes, handle modals for edit/delete |
+| `save-notes.js`     | `add.php`                          | Triggers modals to save notes                            |
+
+
+🛠 Database
+
+SQL schema included in db.sql
+
+Contains tables for:
+
+Notes
+
+Categories
+
+Relationships between them (if normalized)
+
+
+
+🏁 Getting Started
+
+Import db.sql into your MySQL database.
+
+Configure database connection in your backend files (if needed).
+
+Open index.php in your browser to get started.
+
+
+
+📌 Notes
+
+This app uses plain PHP and JavaScript (no frameworks).
+
+Make sure to run it in a local server environment like XAMPP, WAMP, or any LAMP stack.
+
+Ensure fetch, POST, and GET requests are properly handled in your server
+
+
+
+
+
+
+
+
+
+
+api/
+index.php - redirects to homepage 
+delete-note.php - api to delete note from ../index.php page
+fetch-categories.php - api to fetch & delete categories in the ../pages/categories.php page
+get-notes.php - api to fetch note to the ../index.php page
+save-notes.php - api to save notes in the ../add.php page
+update-note.php - api to update note in the ../edit.php page
+update-title.php - api to update note title in ../index.php page
+
+css/
+style.css
+
+js/
+category.js - JavaScript functionality for category dropdown selection in ../index.php, add.php and view.php
+close-btn.js - JavaScript functionality for exiting add.php and view.php without saving
+fetch-category.js - fetch & delete category in ../pages/categories.php using the fetch-category.php api
+find-replace.js - JavaScript functionality for text editor, finding and replacing text in the editor
+notes.js - fetches notes in the ../index.php page, searching & filtering according to category using the get-note.php api, triggers modals to update note in edit.php  in the ../index.php page using the update-title.php api, trigger modals to delete note from the ../index.php page using the delete-title.php api
+save-notes.js - JavaScript functionality to trigger modals to save note in add.php using the save-note.php aspi
+
+pages/
+index.php - redirects to homepage
+add.php - add new note
+view.php - view and update existing note
+categories.php - add/delete category
+
+db.sql - DB Schema
+index.php - homepage
+
+
+api/
+index.php - redirects to homepage 
+delete-note.php - api to delete note from ../index.php page
+fetch-categories.php - api to fetch & delete categories in the ../pages/categories.php page
+get-notes.php - api to fetch note to the ../index.php page
+save-notes.php - api to save notes in the ../add.php page
+update-note.php - api to update note in the ../edit.php page
+update-title.php - api to update note title in ../index.php page
+
+css/
+style.css
+
+js/
+category.js - JavaScript functionality for category dropdown selection in ../index.php, add.php and view.php
+close-btn.js - JavaScript functionality for exiting add.php and view.php without saving
+fetch-category.js - fetch & delete category in ../pages/categories.php using the fetch-category.php api
+find-replace.js - JavaScript functionality for text editor, finding and replacing text in the editor
+notes.js - fetches notes in the ../index.php page, searching & filtering according to category using the get-note.php api, triggers modals to update note in edit.php  in the ../index.php page using the update-title.php api, trigger modals to delete note from the ../index.php page using the delete-title.php api
+save-notes.js - JavaScript functionality to trigger modals to save note in add.php using the save-note.php aspi
+
+pages/
+index.php - redirects to homepage
+add.php - add new note
+view.php - view and update existing note
+categories.php - add/delete category
+
+db.sql - DB Schema
+index.php - homepage
