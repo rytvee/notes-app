@@ -3,7 +3,7 @@ A simple web-based note-taking application built using JavaScript, PHP, and CSS 
 
 ## 🌐 Live Demo
 You can visit directly from your browser:
-[Try Demo](https://https://mynotesapp.page.gd//)
+[Try Demo](https://https://mynotesapp.page.gd/)
 
 ## ✨ Features
 - Create, view, edit, and delete notes
