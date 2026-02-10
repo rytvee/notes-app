@@ -1,4 +1,4 @@
-# 📒 Notes-App
+# 📒 Notes App
 A simple web-based note-taking application built using JavaScript, PHP, and CSS — perfect for storing, viewing and managing notes with minimal setup.
 
 ## 🌐 Live Demo
