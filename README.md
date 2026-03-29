@@ -1,17 +1,17 @@
-# 📒 Notes App
+# Notes App
 A simple web-based note-taking application built using JavaScript, PHP, and CSS — perfect for storing, viewing and managing notes with minimal setup.
 
-## 🌐 Live Demo
+## Live Demo
 You can visit directly from your browser:
 [Try Demo](https://mynotesapp.page.gd/)
 
-## ✨ Features
+## Features
 - Create, view, edit, and delete notes
 - Lightweight and self-hosted — no heavy dependencies required
 - Simple folder structure: files served from `pages/`, with assets in `css/`, `js/`, `images/`
 - Uses a simple database backend (SQL + PHP) for note storage (`db.php`, `db.sql`)
 
-## 📁 Repository Structure
+## Repository Structure
 ```text
 /api/         — API endpoints  
 /css/         — Stylesheets  
@@ -24,7 +24,7 @@ index.php     — Main entry point
 README.md     — This file  
 ```
 
-## 🛠️ Getting Started
+## Getting Started
 ### Prerequisites
 - PHP (7.x or higher)
 - MySQL (or compatible SQL database)
@@ -50,18 +50,18 @@ php -S localhost:8000
 6. Access the app in your browser at `http://localhost:8000` (or your server’s URL)
 
 
-## ✅ Usage
+## Usage
 - Visit the homepage (e.g. `index.php`) to view a list of notes
 - Use the “Add Note” page to create a new note (title + content)
 - Click on a note to view details or edit/delete it
 - All changes are saved to the SQL database via the PHP backend
 
-## 🔧 Customization & Configuration
+## Customization & Configuration
 You can easily customize:
 - Database credentials (in `db.php`)
 - CSS styling (in `/css/`)
 - Client-side behavior or enhancements (in `/js/`)
 - Add new features — for example: note-tags, search, reminders, user login/auth
 
-## 📝 License
+## License
 This project is open-source; you can choose a license (e.g. MIT, Apache 2.0) by adding a `LICENSE` file.
