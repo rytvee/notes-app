@@ -1,15 +1,12 @@
 # Notes App
 A simple web-based note-taking application built using JavaScript, PHP, and CSS — perfect for storing, viewing and managing notes with minimal setup.
 
-## Live Demo
-You can visit directly from your browser:
-[Try Demo](https://mynotesapp.page.gd/)
-
 ## Features
 - Create, view, edit, and delete notes
 - Lightweight and self-hosted — no heavy dependencies required
 - Simple folder structure: files served from `pages/`, with assets in `css/`, `js/`, `images/`
 - Uses a simple database backend (SQL + PHP) for note storage (`db.php`, `db.sql`)
+- Uses custom mini "rich-text" styled editor
 
 ## Repository Structure
 ```text
