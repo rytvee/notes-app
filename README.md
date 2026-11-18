@@ -45,20 +45,3 @@ php -S localhost:8000
 ```
 5. Serve the application via your web server or PHP built-in server:
 6. Access the app in your browser at `http://localhost:8000` (or your server’s URL)
-
-
-## Usage
-- Visit the homepage (e.g. `index.php`) to view a list of notes
-- Use the “Add Note” page to create a new note (title + content)
-- Click on a note to view details or edit/delete it
-- All changes are saved to the SQL database via the PHP backend
-
-## Customization & Configuration
-You can easily customize:
-- Database credentials (in `db.php`)
-- CSS styling (in `/css/`)
-- Client-side behavior or enhancements (in `/js/`)
-- Add new features — for example: note-tags, search, reminders, user login/auth
-
-## License
-This project is open-source; you can choose a license (e.g. MIT, Apache 2.0) by adding a `LICENSE` file.
